@@ -1,0 +1,40 @@
+body {
+    background-color: aliceblue;
+}
+h1 {
+    text-align: center;
+}
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+input, button {
+    margin: 5px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    font-size: 15px;
+}
+input::placeholder {
+    text-align: center;
+}
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    text-align: center;
+}
