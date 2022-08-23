@@ -52,7 +52,6 @@ include_once './models/TodoModel.php';
                 ';
             }
             return $todosElements;
-
         }
 
     }

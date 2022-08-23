@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Todos</title>
-        <link rel="shortcut icon" href="https://images.unsplash.com/photo-1641154706848-fe27fd366032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRvZG9saXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+        <title>Blog-articles (TP)</title>
+        <link rel="shortcut icon" href="https://images.unsplash.com/photo-1471970471555-19d4b113e9ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
     </head>
 
     <body>
-        <!-- (myPATH) http://localhost/y.doranco-7-OOP/todos/index.php -->
-        <h1>Les tâches :</h1>
+        <!-- (myPATH) http://localhost/y.doranco-7-OOP/arts/index.php -->
+        <h1>Blog-articless (TP) :</h1>
         <?php 
-            include_once './views/todoForm.php';
+            include_once './views/artForm.php';
         ?>
 
         <?php 
-            include_once './views/todosList.php';
+            include_once './views/artsList.php';
         ?>
         
     </body>
