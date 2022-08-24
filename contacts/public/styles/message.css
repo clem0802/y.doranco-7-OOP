@@ -31,4 +31,5 @@ li {
     flex-direction: column;
     background-color: rgb(208, 205, 205);
     width: 70%;
+    border-radius: 12px;
 }

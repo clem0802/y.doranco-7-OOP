@@ -26,7 +26,7 @@
     <input type="text" name="nom" placeholder="Nom">
     <input type="text" name="prenom" placeholder="Prénom">
     <textarea id="message" name="message" placeholder="Message"></textarea>
-    <input type="submit" name="addContact" value="Submit" class="submit">
+    <input type="submit" name="addContact" value="Soumettre" class="submit">
 </form>
 
 
