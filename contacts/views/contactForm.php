@@ -1,5 +1,4 @@
 
-
 <?php 
     // var_dump($_POST);
     include_once './controllers/ContactController.php';
@@ -16,11 +15,10 @@
         // enregistrer le contact dans la BDD
         $contactController->saveToDB();
     }
-
 ?>
 
 
-<form method="POST" name="contact">
+<form method="POST">
     <h2>Formulaire de contact</h2>
     <input type="email" name="email" placeholder="Email">
     <input type="text" name="nom" placeholder="Nom">

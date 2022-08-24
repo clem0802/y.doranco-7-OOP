@@ -26,7 +26,6 @@
         public function saveToDB(){
             $SQLRequest = $this->connect()->prepare("INSERT INTO contactslist (email, nom, prenom, message) VALUES (?,?,?,?)");
             $SQLRequest->execute([$this->email, $this->nom, $this->prenom, $this->message]);
-            // $this->contactModel->saveToDB();
         }
 
         public static function removeByID($contactID){
