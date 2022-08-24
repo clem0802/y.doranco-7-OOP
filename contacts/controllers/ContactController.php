@@ -20,9 +20,32 @@ include_once './models/ContactModel.php';
             return $this->error;
         }
 
+
+
+
         public function isValidContact(){
-            return $this->contact !== null && $this->contactNotEmpty();
+            return $this->isValidEmail() && 
+            $this->isValidNom() && 
+            $this->isValidPrenom() && 
+            $this->isValidMessage();
         }
+
+        function isValidEmail(){
+            return $this->email !== null && $this->email !== "";
+        }
+        function isValidNom(){
+            return $this->nom !== null && $this->nom !== "";
+        }
+        function isValidPrenom(){
+            return $this->prenom !== null && $this->prenom !== "";
+        }
+        function isValidMessage(){
+            return $this->message !== null && $this->message !== "";
+        }
+
+
+
+        
 
         public function saveToDB(){
             if($this->contactModel->checkIfExist()){
