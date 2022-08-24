@@ -21,6 +21,11 @@
             $SQLRequest->execute([$this->todo]);
         }
 
+        public static function removeByID($todoID){
+            $deleteTodoReq = self::connect()->prepare('DELETE FROM todoslist WHERE id=?;');
+            $deleteTodoReq->execute([$todoID]);
+        }
+
         public static function fetchAll(){
             $SQLRequest = self::connect()->query('SELECT * FROM todoslist');
             $SQLRequest->execute();

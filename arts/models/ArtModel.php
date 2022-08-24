@@ -21,6 +21,11 @@
             $SQLRequest->execute([$this->art]);
         }
 
+        public static function removeByID($artID){
+            $deleteArtReq = self::connect()->prepare('DELETE FROM artslist WHERE id=?;');
+            $deleteArtReq->execute([$artID]);
+        }
+
         public static function fetchAll(){
             $SQLRequest = self::connect()->query('SELECT * FROM artslist');
             $SQLRequest->execute();

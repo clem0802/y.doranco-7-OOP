@@ -1,5 +1,8 @@
 <?php 
     include_once './controllers/ArtController.php';
+    if(isset($_GET['deleteArt'])){
+        ArtController::deleteArt($_GET['deleteArt']);
+    }
 ?>
 
 <section>
@@ -10,3 +13,5 @@
         ?>
     </ol>
 </section>
+
+

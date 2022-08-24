@@ -1,0 +1,9 @@
+h1 {
+    color: royalblue;
+    border-bottom: 1px solid royalblue;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}

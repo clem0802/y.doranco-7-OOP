@@ -10,7 +10,7 @@
 
     <body>
         <!-- (myPATH) http://localhost/y.doranco-7-OOP/arts/index.php -->
-        <h1>Blog-articles (TP) :</h1>
+        <h1>Blog-articles (TP)</h1>
         <?php 
             include_once './views/artForm.php';
         ?>

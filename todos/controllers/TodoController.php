@@ -28,31 +28,41 @@ include_once './models/TodoModel.php';
             }
         }
 
+        public static function deleteTodo($todoID){
+            TodoModel::removeByID($todoID);
+        }
+
         private function todoNotEmpty(){
             if($this->todo === ""){
-                $this->error = "Entrez une tâche";
+                $this->error = "Entrez une tâche svp.";
                 return false;
             } else{
                 return true;
             }
         }
 
-        public static function renderTodos(){
+        // après pause
+        public static function getTodos(){
             // utiliser le Model pour chercher toutes les todos
             // une fonction statique dans une classe
             $todos = TodoModel::fetchAll();
-            // faire une boucle sur chaque todo et créer des éléments HTML
-            $todosElements = "";
-            foreach($todos as $key => $todo){
-                $todosElements .= '
-                    <li>
-                        <span>' . $todo['text']. ' - </span>
-                        <span>' . $todo['date']. '</span>
-                    </li>
-                ';
-            }
-            return $todosElements;
-        }
 
+            // faire une boucle sur chaque todo et créer des éléments HTML
+            // foreach($todos as $key => $todo){
+                // $date = date('j/m/Y - G:i', strtotime('2022-08-23 14:37:54'));
+
+                // $date = date('j/m/Y - G:i', strtotime($todo['date']));
+                // $todosElements .= '
+                //     <li>
+                //         <span>' . $todo['text']. ' - </span>
+                //         <span>' . $todo['date']. '</span>
+                //         <form method="GET">
+                //             <button type="submit" name="deleteTodo" value="'.$todo['id'].'">Supprimer</button>
+                //         </form>
+                //     </li>
+                // ';
+            // }
+            return $todos;
+        }
     }
 ?>

@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+h1 {
+    color: royalblue;
+    border-bottom: 1px solid royalblue;
+}
+h2 {
+    color: green;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+li {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(208, 205, 205);
+    width: 70%;
+}

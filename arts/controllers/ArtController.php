@@ -29,6 +29,10 @@ include_once './models/ArtModel.php';
             }
         }
 
+        public static function deleteArt($artID){
+            ArtModel::removeByID($artID);
+        }
+
         private function artNotEmpty(){
             if($this->art === ""){
                 $this->error = "Écrivez un court article";
@@ -45,11 +49,15 @@ include_once './models/ArtModel.php';
             // faire une boucle sur chaque art => article et créer des éléments HTML
             $artsElements = "";
             foreach($arts as $key => $art){
+                $date = date('j/m/Y - G:i', strtotime('2022-08-23 14:37:54'));
                 $artsElements .= '
                     <li>
                         <span>' . $art['title']. ' - </span>
                         <span>' . $art['content']. ' - </span>
                         <span>' . $art['date']. '</span>
+                        <form method="GET">
+                        <button type="submit" name="deleteArt" value="'.$art['id'].'">Delete</button>
+                        </form>
                     </li>
                 ';
             }
