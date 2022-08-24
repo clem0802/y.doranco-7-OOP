@@ -21,13 +21,8 @@ include_once './models/ContactModel.php';
         }
 
 
-
-
         public function isValidContact(){
-            return $this->isValidEmail() && 
-            $this->isValidNom() && 
-            $this->isValidPrenom() && 
-            $this->isValidMessage();
+            return $this->isValidEmail() && $this->isValidNom() && $this->isValidPrenom() && $this->isValidMessage();
         }
 
         function isValidEmail(){
@@ -48,12 +43,13 @@ include_once './models/ContactModel.php';
         
 
         public function saveToDB(){
-            if($this->contactModel->checkIfExist()){
-                $this->error = "Ce contact existe déjà.";
-            } else{
-                // utiliser le Model pour enregistrer le contact
-                $this->contactModel->saveToDB();
-            }
+            // if($this->contactModel->checkIfExist()){
+            //     $this->error = "Ce contact existe déjà.";
+            // } else{
+            //     // utiliser le Model pour enregistrer le contact
+            //     $this->contactModel->saveToDB();
+            // }
+            $this->contactModel->saveToDB();
         }
 
         public static function deleteContact($contactID){
