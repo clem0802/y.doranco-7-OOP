@@ -10,6 +10,7 @@
 <section>
     <ol>
         <?php 
+            // ici ça retourne un "TABLEAU ASSOCIATIF"
             // utiliser le ContactController pour chercher les contacts et les afficher 
             // echo ContactController::renderContacts();
             $contacts = ContactController::getContacts();
@@ -18,9 +19,9 @@
                 // $date = date('j/m/Y - G:i', strtotime($contact['date']));
                 echo '
                     <li>
-                        <span>' . $contact['nom']. ' ' . $contact['prenom'].' - </span>
-                        <span>' . $contact['email']. ' - </span>
-                        <span>' . $contact['message']. ' - </span>
+                        <span>' .$contact['nom']. ' ' .$contact['prenom'].' - </span>
+                        <span>' .$contact['email']. ' - </span>
+                        <span>' .$contact['message']. ' - </span>
             
                         <form method="GET">
                             <button type="submit" name="deleteContact" value="'.$contact['id'].'">Supprimer</button>
