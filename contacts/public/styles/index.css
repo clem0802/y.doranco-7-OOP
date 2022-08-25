@@ -24,6 +24,7 @@ form {
     padding: 10px 10px 50px 10px;
     margin: 0 auto;
     background-color: rgb(208, 205, 205);
+    border-radius: 8px;
 }
 
 input, textarea {

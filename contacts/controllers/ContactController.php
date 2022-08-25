@@ -13,6 +13,7 @@ include_once './models/ContactModel.php';
             $this->nom = $nom;
             $this->prenom = $prenom;
             $this->message = $message;
+
             $this->contactModel = new ContactModel($email,$nom,$prenom,$message);
         }
 
@@ -25,18 +26,28 @@ include_once './models/ContactModel.php';
             return $this->isValidEmail() && $this->isValidNom() && $this->isValidPrenom() && $this->isValidMessage();
         }
 
-        function isValidEmail(){
+        private function isValidEmail(){
             return $this->email !== null && $this->email !== "";
         }
-        function isValidNom(){
+        private function isValidNom(){
             return $this->nom !== null && $this->nom !== "";
         }
-        function isValidPrenom(){
+        private function isValidPrenom(){
             return $this->prenom !== null && $this->prenom !== "";
         }
-        function isValidMessage(){
+        private function isValidMessage(){
             return $this->message !== null && $this->message !== "";
         }
+
+        // (another way)
+        // private function isValidEmail(){
+        //     if($this->email === null || $this->email === ""){
+        //         $this-emailError = "Email ne peut pas être vide!";
+        //         return false;
+        //     } else{
+        //         return true;
+        //     }
+        // }
 
 
 

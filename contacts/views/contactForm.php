@@ -10,6 +10,8 @@
     $message = isset($_POST['message']) ? $_POST['message'] : null;
 
     $contactController = new ContactController($email, $nom, $prenom, $message);
+
+
     // ici on veut tester s'il y a "submit" == (addTodo)
     if(isset($_POST['addContact']) && $contactController->isValidContact()){
         // enregistrer le contact dans la BDD
@@ -26,8 +28,6 @@
     <textarea id="message" name="message" placeholder="Message"></textarea>
     <input type="submit" name="addContact" value="Soumettre" class="submit">
 </form>
-
-
 
 
 
