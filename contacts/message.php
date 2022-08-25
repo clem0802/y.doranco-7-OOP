@@ -10,7 +10,7 @@
     
     <body>
         
-        <!-- (myPATH) http://localhost/y.doranco-7-OOP/contacts/index.php -->
+        <!-- (myPATH) http://localhost/y.doranco-7-OOP/contacts/message.php -->
         <h1>Liste des messages postés</h1>
         <?php 
             include_once './views/contactsList.php';
