@@ -1,0 +1,16 @@
+SUR PC
+WAMP
+c:/wamp64/www
+créer un dossier php
+
+c:/wamp64/www/php   ===>   http://localhost/php
+
+---------------------------------------------------------------
+
+
+SUR MAC
+MAMP
+Applications/MAMP/htdocs
+créer un dossier php
+
+Applications/MAMP/htdocs/php  ==> http://localhost:8888/php

@@ -1,0 +1,22 @@
+Exercice 1: index.php
+
+1 / Créer un formulaire pour enregistrer les données dans la DB:
+1.1/Créer la view
+
+2.1/Utiliser le controller pour :
+- Tester les entrées de l'utilisateur:OK
+- CAS 1: Afficher les erreurs. OK
+- CAS 2: Utiliser le Model pour enregistrer les données dans DB OK
+
+3/- Créer le Model:
+3.1/- Créer la base de données. OK
+3.2/- Créer la class DB.php OK
+3.3/- dans la class Model, faire la requête pour enregistrer les données. OK
+
+
+Exercice 2 : messages.php
+1/ Utiliser une boucle pour afficher les messages depuis la DB.
+
+BONUS:
+Ajouter le bouton supprimer.
+

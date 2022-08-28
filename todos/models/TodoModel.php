@@ -21,6 +21,9 @@
             $SQLRequest->execute([$this->todo]);
         }
 
+        // PDF-2 (p15)
+        // self = opérateur de résolution de portée
+        // permet d'accéder aux éléms statiques et constantes de la class
         public static function removeByID($todoID){
             $deleteTodoReq = self::connect()->prepare('DELETE FROM todoslist WHERE id=?;');
             $deleteTodoReq->execute([$todoID]);

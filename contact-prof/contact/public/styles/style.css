@@ -1,0 +1,16 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea,
+button {
+  margin: 10px;
+}
+
+.error {
+  margin: 0 10px;
+  color: rgb(212, 92, 92);
+  font-size: 13px;
+  font-weight: bold;
+}

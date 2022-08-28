@@ -1,0 +1,61 @@
+nav {
+    background-color: rgb(74, 52, 154);
+}
+
+#menuButton {
+    fill: whitesmoke;
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brandText {
+    color: whitesmoke;
+    padding: 0 10px;
+}
+
+.menu {
+    position: absolute;
+    background-color: rgb(104, 43, 226);
+    padding: 20px;
+    width: 75%;
+    max-width: 500px;
+    left: -100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.link,
+.link>a {
+    color: whitesmoke;
+    padding: 5px 0;
+    list-style: none;
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: end;
+        left: 0;
+    }
+
+    .link {
+        padding: 0 10px;
+    }
+}
